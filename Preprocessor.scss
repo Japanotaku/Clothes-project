@@ -1,0 +1,363 @@
+$color-1:black;
+$color-2:#191B1C;
+$size-1:880px;
+@mixin changePosition($X,$Y,$degA,$degB,$size){
+    content:"";
+    border:1px solid white;
+    position: absolute;
+    transform:translate($X,$Y);
+    width:$size;
+    transform: rotate($degA,$degB);
+}
+.middleOfProject{
+    background:$color-1;
+    width:1920px;
+    height:730px;
+    display: flex;
+    justify-content: space-between;
+}
+.block-2{
+    margin-right:auto;
+    width:$size-1;
+    display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap:100px;
+        padding:95px 80px;
+    p{
+    font-family: PlayfairDisplay;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    padding-left:180px;
+    }
+    
+    p::after{
+        @include changePosition(-180px,90px,90deg,20deg,120px);
+    }
+    .watches{
+       display:flex;
+       justify-content: space-between;
+       vertical-align: middle;
+       gap:50px;
+       .watches-into{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+                .watch{
+                    padding:55px 25px;
+                    background-color: $color-2;
+                    margin-bottom:25px;
+                }
+                li{
+                    font-family: PlayfairDisplay;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 24px;
+                        color: #FFFFFF;
+                }
+                li:last-child{
+                    font-size: 16px;
+                    line-height: 21px;
+                    color: #D0D0D0;
+                    margin-top:10px;
+                }
+       }
+    }
+}
+.block-3{
+width: 880px;
+height: 730px;
+background:  url("/img/Rectangle4.jpg"), #000000;
+ul li{
+font-family: PlayfairDisplay;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 48px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+margin-top:484px;
+}
+ul li:last-child{
+font-family: PTSans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 23px;
+text-align: center;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+margin-top:60px;
+padding:12px 28px;
+border: 1px solid #FFFFFF;
+width:142px;
+margin-left:auto;
+margin-right:auto;
+}
+ul li:last-child::before{
+    @include changePosition(-20px,-50px,90deg,20deg,120px);
+}
+}
+.block-4{
+width: 880px;
+height: 600px;
+background:  url("/img/Rectangle5.jpg"), #000000;
+}
+.block-5{
+width: 1040px;
+height: 600px;
+background-color: #000000;
+ul{
+    width:471px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:100px;
+    
+}
+ul li:nth-child(1){
+font-family: PlayfairDisplay;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 48px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+ul li:nth-child(2){
+font-family: PTSans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 150%;
+text-align: center;
+color: #FFFFFF;
+margin-top:80px;
+margin-bottom:75px;
+}
+ul li:nth-child(2)::before{
+    @include changePosition(180px,-50px,90deg,20deg,120px);
+}
+ul li:nth-child(3) {
+ 
+text-align: center;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+padding:12px 28px;
+border:1px solid white;
+a{
+    color: #FFFFFF;
+    font-family: PTSans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+text-decoration: none;}
+}
+}
+.block-6{
+    width: 1920px;
+height: 1289px;
+background-color: #000000;
+    p{
+    font-family: PlayfairDisplay;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+  
+    }
+    
+    p::after{
+        @include changePosition(-270px,90px,90deg,20deg,120px);
+    }
+  .container{
+      width:1150px;
+      margin-left:auto;
+      margin-right:auto;
+      display:flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap:100px;
+  }
+  .watches{
+    display:flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    .watches-into{
+     display:flex;
+     flex-direction: column;
+     justify-content: space-between;
+    
+             .watch{
+                 padding:55px 25px;
+                 background-color: $color-2;
+                 margin-bottom:25px;
+             }
+             li{
+                 font-family: PlayfairDisplay;
+                     font-style: normal;
+                     font-weight: normal;
+                     font-size: 18px;
+                     line-height: 24px;
+                     color: #FFFFFF;
+             }
+             li:last-child{
+                 font-size: 16px;
+                 line-height: 21px;
+                 color: #D0D0D0;
+                 margin-top:10px;
+             }
+    }
+ }
+}
+.block-7{
+width: 1920px;
+height: 362px;
+background-color: #0F0F0F;
+    p{
+        font-family: PlayfairDisplay;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 48px;
+        color: #FFFFFF;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top:60px;
+        }
+    p::after{
+            @include changePosition(-200px,90px,90deg,20deg,120px);
+        }
+    .container{
+        width:1110px;
+      margin-left:auto;
+      margin-right:auto;
+      display:flex;
+      justify-content: space-between;
+      padding-top:80px;
+    }
+}
+footer{
+width: 1920px;
+height: 400px;
+background: url("/img/Rectangle7.jpg") no-repeat;
+.container{
+    width:1110px;
+      margin-left:auto;
+      margin-right:auto;
+      display:flex;
+      justify-content: space-between;
+      padding-top:80px;
+      gap:30px;
+      ul li{
+        font-family: PlayfairDisplay;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 32px;
+        
+        
+        text-transform: uppercase;
+        
+        color: #FFFFFF;
+      }
+      ul li:nth-child(2){
+        font-family: PTSans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 150%;
+        
+        color: #FFFFFF;
+      }
+}
+.main-ul{
+display:flex;
+flex-direction: column;
+gap:30px;
+row-gap:40px;
+        .main-ul-into{
+            display:flex;
+            gap:20px;
+            vertical-align: middle;
+            flex-wrap: wrap;
+            row-gap: 30px;
+            width:330px;
+            li{
+            font-family: PTSans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 150%;
+            color: #D0D0D0;
+            padding:10px 20px;
+            background-color:#0F0F0F;
+            }
+        }
+   }  
+   label{
+      
+       padding:10px 20px;
+       background-color: 
+       #0F0F0F;
+       font-family: PTSans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 150%;
+height:41px;
+width:140px;
+letter-spacing: 0.05em;
+   }
+   input {
+    
+	width: 210px;
+	font-size: 13px;
+	padding:10px 20px;
+	color:#D0D0D0;
+	background: rgba(255, 255, 255, 0.4);
+	border:none;
+}
+
+}
+.last-div{
+    width: 1920px;
+height: 50px;
+
+
+background: #0F0F0F;
+.container{
+    width:1110px;
+    margin-left:auto;
+    margin-right:auto; 
+    display:flex;
+    justify-content: space-between;
+    padding-top:17px;
+    p{
+        
+        font-family: PTSans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 16px;
+
+
+        color: #D0D0D0;
+    }
+}
+}
